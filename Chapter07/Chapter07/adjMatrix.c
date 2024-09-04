@@ -41,9 +41,9 @@ void print_adjMatrix(graphType* g) {
 
 	int i, j;
 
-	for (i = 0; i < MAX_VERTEX; i++) {
+	for (i = 0; i < (g->n); i++) {
 		printf("\n\t\t");
-		for (j = 0; j < MAX_VERTEX; i++) {
+		for (j = 0; j < (g->n); j++) {
 			printf("%2d", g->adjMatrix[i][j]);
 		}
 	}
